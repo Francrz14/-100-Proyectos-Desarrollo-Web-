@@ -1,0 +1,63 @@
+body {
+    background: beige;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.flex-container {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    align-content: center;
+    border: 1px solid black;
+    background: #ccc;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Esta propiedad hace de flex-direcction y flex-wrap */
+    flex-flow: row wrap;
+    width: 60%;
+    height: 600px;
+    margin: 0 auto;
+}
+.caja {
+    border: 1px solid rgb(64, 63, 63);
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    margin: 20px;
+    
+}
+
+.c1 {
+    background: lightblue;
+    order: 2;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    flex-grow: 5;
+    flex-basis: 50%;
+}
+
+.c2 {
+    background: lightcoral;
+    order: 3;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    flex-grow: 1;
+}
+
+.c3 {
+    background: lightgreen;
+    order: 1;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    flex-grow: 1;
+}
